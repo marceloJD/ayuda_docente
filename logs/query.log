@@ -1,0 +1,2054 @@
+2023-07-08T17:50:58.862-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-08T17:50:58.879-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-08T18:07:28.921-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-08T18:07:28.925-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-08T18:07:40.663-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-08T18:07:40.678-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-08T18:08:47.156-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-08T18:08:47.162-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["5"]
+2023-07-08T18:08:49.646-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-08T18:08:49.660-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-08T18:08:59.969-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:00.123-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:00.264-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:00.414-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:00.548-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:00.689-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:00.814-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:00.957-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:01.099-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:01.307-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:01.432-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:01.548-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:01.665-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:01.789-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:01.906-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:02.047-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:02.181-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:02.305-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:02.422-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:02.557-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:02.681-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:02.806-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:02.931-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:03.064-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:03.189-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:03.322-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:03.480-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:03.638-05:00 - info: UPDATE Matricula SET notas = ?
+                WHERE id = ? 
+
+2023-07-08T18:09:28.714-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-08T18:09:28.718-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["5"]
+2023-07-08T18:09:38.400-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-08T18:09:38.412-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-08T18:09:44.737-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-08T18:09:44.747-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-08T18:10:17.360-05:00 - info: UPDATE Curso_Profesor
+            SET pesos = ?
+            WHERE idProfesor = ? AND idCurso = ?;
+            
+
+2023-07-08T18:10:17.509-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-08T18:10:17.510-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:17.626-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:17.784-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:17.909-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:18.033-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:18.160-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:18.277-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:18.402-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:18.535-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:18.676-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:18.809-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:18.934-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:19.059-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:19.192-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:19.308-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:19.459-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:19.692-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:19.868-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:20.059-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:20.200-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:20.325-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:20.508-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:20.674-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:20.816-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:20.933-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:21.057-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:21.174-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:21.324-05:00 - info: UPDATE Matricula SET notas = ?
+                    WHERE id = ? 
+
+2023-07-08T18:10:37.607-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-08T18:10:37.614-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-08T18:10:43.058-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-08T18:10:43.060-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-14T19:02:00.629-05:00 - SELECT * 
+        FROM Curso_Profesor 
+        WHERE fechaLimite < date('now', '+7 days');
+[]
+2023-07-14T19:44:00.723-05:00 - SELECT * 
+        FROM Curso_Profesor 
+        WHERE fechaLimite < date('now', '+7 days');
+[]
+2023-07-14T20:05:00.834-05:00 - SELECT * 
+        FROM Curso_Profesor 
+        WHERE fechaLimite < date('now', '+7 days');
+[]
+2023-07-14T20:09:00.785-05:00 - SELECT * 
+        FROM Curso_Profesor 
+        WHERE fechaLimite < date('now', '+7 days');
+[]
+2023-07-14T20:35:00.487-05:00 - 
+      SELECT CP.fechaLimite, P.Correo, C.Nombre AS nombreCurso
+      FROM Curso_Profesor CP
+      INNER JOIN Profesor P ON CP.idProfesor = P.CODIGO
+      INNER JOIN Curso C ON CP.idCurso = C.CODIGO
+      WHERE CP.fechaLimite < date('now', '+7 days');
+    
+[]
+2023-07-14T20:37:00.215-05:00 - 
+      SELECT CP.fechaLimite, P.Correo, C.Nombre AS nombreCurso
+      FROM Curso_Profesor CP
+      INNER JOIN Profesor P ON CP.idProfesor = P.CODIGO
+      INNER JOIN Curso C ON CP.idCurso = C.CODIGO
+      WHERE CP.fechaLimite < date('now', '+7 days');
+    
+[]
+2023-07-14T20:38:00.749-05:00 - 
+      SELECT CP.fechaLimite, P.Correo, C.Nombre AS nombreCurso
+      FROM Curso_Profesor CP
+      INNER JOIN Profesor P ON CP.idProfesor = P.CODIGO
+      INNER JOIN Curso C ON CP.idCurso = C.CODIGO
+      WHERE CP.fechaLimite < date('now', '+7 days');
+    
+[]
+2023-07-14T20:40:00.092-05:00 - 
+      SELECT CP.fechaLimite, P.Correo, C.Nombre AS nombreCurso
+      FROM Curso_Profesor CP
+      INNER JOIN Profesor P ON CP.idProfesor = P.CODIGO
+      INNER JOIN Curso C ON CP.idCurso = C.CODIGO
+      WHERE CP.fechaLimite < date('now', '+7 days');
+    
+[]
+2023-07-15T02:38:06.082-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T02:38:06.085-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T02:38:42.167-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?,?,?,?,?)
+
+2023-07-15T02:38:47.511-05:00 - info: 
+            SELECT *
+            FROM Alumno;
+            
+
+2023-07-15T02:55:41.235-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T02:55:41.237-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T02:56:38.630-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T02:56:38.632-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T02:58:03.698-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T02:58:03.704-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T02:59:23.075-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T02:59:23.078-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:10:36.217-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:10:36.219-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:14:01.294-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:14:01.298-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:17:56.469-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:17:56.483-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:20:51.999-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:20:52.002-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:22:46.621-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:22:46.625-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:23:26.521-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:23:26.525-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:26:58.928-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:26:58.929-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:40:17.830-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:40:17.837-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:43:08.029-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:43:08.033-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T03:43:14.353-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?, ?, ?, ?, ?)
+
+2023-07-15T03:44:04.825-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?, ?, ?, ?, ?)
+
+2023-07-15T03:45:27.238-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?, ?, ?, ?, ?)
+
+2023-07-15T03:45:27.432-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?, ?, ?, ?, ?)
+
+2023-07-15T03:45:27.540-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?, ?, ?, ?, ?)
+
+2023-07-15T03:45:27.673-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?, ?, ?, ?, ?)
+
+2023-07-15T03:45:35.486-05:00 - info: 
+            SELECT *
+            FROM Alumno;
+            
+
+2023-07-15T03:51:08.675-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?, ?, ?, ?, ?)
+
+2023-07-15T03:52:13.106-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:52:13.121-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T03:53:57.923-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T03:53:57.938-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T03:54:08.899-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T03:54:08.920-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T03:54:14.687-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T03:54:14.695-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T03:54:19.332-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T03:54:19.340-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T03:57:00.028-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:57:00.032-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T03:58:47.879-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T03:58:47.884-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T04:00:30.121-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T04:00:30.142-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T04:01:14.785-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T04:01:14.791-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T04:01:16.824-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T04:01:20.330-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T04:01:20.340-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T04:03:37.721-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T04:03:37.728-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T04:05:37.533-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T04:05:37.538-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T04:22:16.416-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T04:22:16.423-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T04:22:19.711-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T04:22:24.216-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T04:22:24.226-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T04:23:22.568-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T04:23:22.578-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T04:23:30.108-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T04:23:30.129-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T04:25:23.703-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T04:25:23.712-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T04:25:29.471-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T04:25:29.481-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T04:28:21.705-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T04:28:21.710-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T04:28:44.514-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T04:28:44.522-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["1"]
+2023-07-15T04:28:50.085-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T04:28:50.111-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T04:29:25.454-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T04:29:25.463-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T11:35:05.967-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T11:35:05.970-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T12:34:08.666-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:34:19.697-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:37:38.832-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:37:39.261-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T12:37:39.272-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["undefined"]
+2023-07-15T12:38:28.937-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:38:29.357-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T12:38:29.364-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["undefined"]
+2023-07-15T12:39:31.496-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:39:31.846-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T12:39:31.857-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["undefined"]
+2023-07-15T12:39:48.085-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:39:50.397-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:40:18.633-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T12:40:18.636-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T12:41:00.351-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T12:41:00.357-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T12:41:04.278-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:42:03.981-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T12:42:03.989-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T12:42:07.633-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:42:12.071-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:42:12.375-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T12:42:12.382-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T12:50:50.077-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:50:51.174-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T12:50:51.183-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T12:51:11.996-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:51:12.253-05:00 - info: 
+                SELECT c.Nombre, c.Descripcion
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+            
+
+2023-07-15T12:51:12.260-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T12:55:02.521-05:00 - info: SELECT name FROM sqlite_master WHERE type='table' 
+
+2023-07-15T12:55:02.528-05:00 - info: SELECT * FROM administrador
+
+2023-07-15T12:55:02.531-05:00 - info: SELECT * FROM sqlite_sequence
+
+2023-07-15T12:55:02.536-05:00 - info: SELECT * FROM Profesor
+
+2023-07-15T12:55:02.540-05:00 - info: SELECT * FROM Curso
+
+2023-07-15T12:55:02.543-05:00 - info: SELECT * FROM Curso_Profesor
+
+2023-07-15T12:55:02.551-05:00 - info: SELECT * FROM Alumno
+
+2023-07-15T12:55:02.562-05:00 - info: SELECT * FROM Matricula
+
+2023-07-15T12:56:40.664-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                ;
+            
+
+2023-07-15T12:56:40.685-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T12:57:03.441-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                ;
+            
+
+2023-07-15T12:57:03.458-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T12:57:19.546-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T12:57:19.958-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                ;
+            
+
+2023-07-15T12:57:19.966-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T12:57:52.564-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                ;
+            
+
+2023-07-15T12:57:52.582-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T12:58:12.979-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                ;
+            
+
+2023-07-15T12:58:13.021-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:00:33.560-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:00:33.576-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:01:03.735-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:01:03.755-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:01:56.669-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T13:01:57.108-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:01:57.117-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:03:17.515-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T13:03:20.096-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T13:03:20.541-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:03:20.549-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:05:27.761-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:05:27.779-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:05:51.838-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:05:51.853-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:05:54.912-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:05:54.928-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T13:06:00.363-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:06:00.375-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:06:37.753-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:06:37.785-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:07:24.546-05:00 - info: UPDATE Curso_Profesor
+            SET pesos = ?
+            WHERE idProfesor = ? AND idCurso = ?;
+            
+
+2023-07-15T13:07:24.742-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T13:07:29.527-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:07:29.535-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:07:32.428-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:07:32.448-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T13:10:25.235-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:10:25.254-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:10:44.393-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:10:50.350-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:10:57.663-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:10:57.668-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:11:02.903-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:11:02.912-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T13:11:07.648-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:11:07.661-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T13:12:55.707-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:12:55.709-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:12:57.888-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:12:57.894-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:13:31.722-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?,?,?,?,?)
+
+2023-07-15T13:13:50.445-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:13:53.266-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:14:04.431-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:14:04.432-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:16:34.872-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:16:34.876-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:24:38.237-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:24:38.246-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:24:50.769-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:24:50.779-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:25:15.058-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:25:15.063-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:25:26.593-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:25:26.596-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:25:28.258-05:00 - 
+            SELECT Matricula.*
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+["","0"]
+2023-07-15T13:26:23.736-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:26:23.745-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:26:26.671-05:00 - info: 
+            SELECT *
+            FROM Alumno;
+            
+
+2023-07-15T13:26:40.363-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:26:40.365-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:26:50.361-05:00 - 
+            SELECT Matricula.*
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+["30344055","1"]
+2023-07-15T13:28:31.345-05:00 - 
+            SELECT Matricula.*
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+["30344055","1"]
+2023-07-15T13:28:31.350-05:00 - 
+            SELECT Matricula.notas
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+["30344055","1"]
+2023-07-15T13:28:31.351-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:28:31.585-05:00 - 
+            INSERT INTO Matricula (idAlumno, idCursoProfesor, notas)
+            VALUES (?, (SELECT id FROM Curso_Profesor WHERE idCurso = ? AND idProfesor = ?), ?);
+            
+["30344055","1","3","{\"1\":0,\"2\":0,\"3\":0}"]
+2023-07-15T13:28:41.232-05:00 - 
+            SELECT Matricula.*
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+["30344055","1"]
+2023-07-15T13:28:41.234-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:28:43.731-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:28:43.737-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:28:57.773-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:29:00.323-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:29:28.169-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:29:31.077-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:30:29.098-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:30:29.102-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:30:37.961-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:30:56.684-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:30:56.689-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:30:57.354-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:30:57.361-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:31:02.929-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T13:31:03.255-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:31:03.260-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:31:06.265-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:31:06.276-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T13:31:50.297-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:31:50.305-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:31:52.200-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:31:52.203-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:32:08.210-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?,?,?,?,?)
+
+2023-07-15T13:32:12.489-05:00 - info: 
+            SELECT *
+            FROM Alumno;
+            
+
+2023-07-15T13:32:26.611-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:32:26.614-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:32:34.884-05:00 - 
+            SELECT Matricula.*
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+["12345678910","1"]
+2023-07-15T13:32:34.889-05:00 - 
+            SELECT Matricula.notas
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+["12345678910","1"]
+2023-07-15T13:32:34.889-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:32:35.061-05:00 - 
+            INSERT INTO Matricula (idAlumno, idCursoProfesor, notas)
+            VALUES (?, (SELECT id FROM Curso_Profesor WHERE idCurso = ? AND idProfesor = ?), ?);
+            
+["12345678910","1","3","{\"1\":0,\"2\":0}"]
+2023-07-15T13:32:48.304-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:32:48.309-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:32:54.921-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:33:11.653-05:00 - info: SELECT name FROM sqlite_master WHERE type='table' 
+
+2023-07-15T13:33:11.661-05:00 - info: SELECT * FROM administrador
+
+2023-07-15T13:33:11.664-05:00 - info: SELECT * FROM sqlite_sequence
+
+2023-07-15T13:33:11.667-05:00 - info: SELECT * FROM Profesor
+
+2023-07-15T13:33:11.670-05:00 - info: SELECT * FROM Curso
+
+2023-07-15T13:33:11.673-05:00 - info: SELECT * FROM Curso_Profesor
+
+2023-07-15T13:33:11.677-05:00 - info: SELECT * FROM Alumno
+
+2023-07-15T13:33:11.691-05:00 - info: SELECT * FROM Matricula
+
+2023-07-15T13:38:27.925-05:00 - info: SELECT name FROM sqlite_master WHERE type='table' 
+
+2023-07-15T13:38:27.932-05:00 - info: SELECT * FROM administrador
+
+2023-07-15T13:38:27.935-05:00 - info: SELECT * FROM sqlite_sequence
+
+2023-07-15T13:38:27.937-05:00 - info: SELECT * FROM Profesor
+
+2023-07-15T13:38:27.940-05:00 - info: SELECT * FROM Curso
+
+2023-07-15T13:38:27.943-05:00 - info: SELECT * FROM Curso_Profesor
+
+2023-07-15T13:38:27.948-05:00 - info: SELECT * FROM Alumno
+
+2023-07-15T13:38:27.956-05:00 - info: SELECT * FROM Matricula
+
+2023-07-15T13:39:18.448-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:39:18.455-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:39:26.493-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:39:41.684-05:00 - info: INSERT INTO Alumno (Nombre, Apellidos, DNI, correo, direccion) 
+            VALUES (?,?,?,?,?)
+
+2023-07-15T13:39:49.112-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:39:49.117-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:39:59.752-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:39:59.758-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:40:03.043-05:00 - info: 
+            SELECT *
+            FROM Alumno;
+            
+
+2023-07-15T13:40:09.620-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:40:09.627-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:40:16.598-05:00 - 
+            SELECT *
+            FROM Alumno
+            WHERE DNI = ?;
+            
+["123"]
+2023-07-15T13:40:16.600-05:00 - 
+            SELECT Matricula.*
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+[null,"1"]
+2023-07-15T13:40:16.602-05:00 - 
+            SELECT Matricula.notas
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+[null,"1"]
+2023-07-15T13:40:16.603-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:41:15.155-05:00 - 
+            SELECT *
+            FROM Alumno
+            WHERE DNI = ?;
+            
+["123"]
+2023-07-15T13:41:15.159-05:00 - 
+            SELECT Matricula.*
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+[null,"1"]
+2023-07-15T13:41:15.161-05:00 - 
+            SELECT Matricula.notas
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+[null,"1"]
+2023-07-15T13:41:15.162-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:41:49.806-05:00 - 
+            SELECT *
+            FROM Alumno
+            WHERE DNI = ?;
+            
+["123"]
+2023-07-15T13:41:49.810-05:00 - 
+            SELECT Matricula.*
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+[47,"1"]
+2023-07-15T13:41:49.812-05:00 - 
+            SELECT Matricula.notas
+            FROM Matricula
+            JOIN Curso_Profesor ON Curso_Profesor.id = Matricula.idCursoProfesor
+            WHERE Matricula.idAlumno = ?
+            AND Curso_Profesor.idCurso = ?;
+            
+[47,"1"]
+2023-07-15T13:41:49.813-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:41:50.029-05:00 - 
+            INSERT INTO Matricula (idAlumno, idCursoProfesor, notas)
+            VALUES (?, (SELECT id FROM Curso_Profesor WHERE idCurso = ? AND idProfesor = ?), ?);
+            
+[47,"1","3","{\"1\":0,\"2\":0}"]
+2023-07-15T13:41:53.490-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:41:53.492-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:42:00.927-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:42:56.597-05:00 - info: 
+            SELECT Alumno.*
+            FROM Alumno
+            INNER JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            INNER JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            WHERE (Curso_Profesor.idCurso = ? )
+            AND (Curso_Profesor.idProfesor = ? )
+            
+            
+
+2023-07-15T13:46:55.641-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:46:55.643-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:46:57.110-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:46:57.113-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:46:58.109-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:46:58.112-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:46:59.209-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:46:59.211-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:47:00.599-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:47:00.601-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:47:01.432-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:47:01.436-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:47:52.095-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:47:52.099-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:48:17.348-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:48:17.350-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:48:17.932-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:48:17.935-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:48:18.129-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:48:18.132-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:48:18.595-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:48:18.597-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:48:19.088-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:48:19.093-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:48:19.649-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:48:19.652-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:48:19.862-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:48:19.870-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-15T13:48:24.616-05:00 - info: 
+            SELECT * FROM Profesor WHERE Correo=? AND  Clave=?;
+            
+
+2023-07-15T13:48:24.990-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:48:24.997-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:48:32.718-05:00 - info: 
+            SELECT pesos
+            FROM Curso_Profesor
+            WHERE idCurso = ? AND idProfesor = ?;
+            
+
+2023-07-15T13:48:32.730-05:00 - info: 
+            SELECT Matricula.id, Alumno.CODIGO, Alumno.Nombre, Alumno.Apellidos, Matricula.notas
+            FROM Alumno
+            JOIN Matricula ON Alumno.CODIGO = Matricula.idAlumno
+            JOIN Curso_Profesor ON Matricula.idCursoProfesor = Curso_Profesor.id
+            JOIN Profesor ON Curso_Profesor.idProfesor = Profesor.CODIGO
+            WHERE Curso_Profesor.idCurso = ?
+            AND Profesor.CODIGO = ?;
+            
+
+2023-07-15T13:51:27.651-05:00 - info: 
+                SELECT c.*
+                FROM Curso c
+                INNER JOIN Curso_Profesor cp ON c.CODIGO = cp.idCurso
+                INNER JOIN Profesor p ON p.CODIGO = cp.idProfesor
+                WHERE p.CODIGO = ?
+                ;
+            
+
+2023-07-15T13:51:27.665-05:00 - 
+            SELECT Curso.Nombre, Curso_Profesor.fechaLimite
+            FROM Curso
+            JOIN Curso_Profesor ON Curso.CODIGO = Curso_Profesor.idCurso
+            WHERE Curso_Profesor.idProfesor = ?;
+            
+["3"]
+2023-07-15T13:51:39.674-05:00 - info: 
+            SELECT * FROM Curso;
+            
+
+2023-07-15T13:51:39.676-05:00 - info: 
+            SELECT Nombre,Apellidos,CODIGO FROM Profesor;
+            
+
+2023-07-19T10:52:00.919-05:00 - 
+      SELECT CP.fechaLimite, P.Correo, C.Nombre AS nombreCurso
+      FROM Curso_Profesor CP
+      INNER JOIN Profesor P ON CP.idProfesor = P.CODIGO
+      INNER JOIN Curso C ON CP.idCurso = C.CODIGO
+      WHERE CP.fechaLimite < date('now', '+7 days');
+    
+[]

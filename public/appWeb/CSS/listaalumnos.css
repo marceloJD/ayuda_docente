@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color:rgb(194, 216, 242);
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    background-color: rgba(80, 121, 201, 1);
+    color: #fff;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+.menu-vertical {
+    list-style-type: none;
+    background-color: rgba(80, 121, 201, 1);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    padding: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(80, 121, 201, 1);
+    padding: 10px;
+}
+h1{
+    padding: 10px;
+    background-color: rgba(80, 121, 201, 1);
+    color: #fffafa;
+    font-family: 'Itim', cursive;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+}
+h2{
+    background-color:rgba(80, 121, 201, 1);
+    color:#ffff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+
+}
+.usuario{
+    color: rgb(5, 5, 5); 
+    background-color: rgba(80, 121, 201, 1);
+    font-size: 30px;
+}
+.menu-vertical li a {
+    display: flex;
+    color: rgb(247, 246, 244);
+    background-color: rgba(80, 121, 201, 1);
+    padding: 20px 5px;
+    text-decoration: none;
+    font-size:15px;
+    font-weight: 600;
+}
+.menu-vertical li a:hover {
+    background-color: rgb(79, 194, 190);
+    color: #fff;
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+    border-radius: 5px;
+}
+.menu-vertical li ul {
+    display: none;
+}
+.menu-vertical li ul li {
+    display: block;
+}
+.profesor{
+    margin-bottom: 20px ;
+    text-align: start;
+    font-weight: 700;
+}
+.icono{
+    font-size: 30px;
+    color:rgb(246, 243, 243);
+    background-color:rgba(0, 0, 0, 0);
+    padding: 0 10px;
+}
+.icon{
+    font-size: 20px;
+    color:rgb(246, 243, 243);
+    background-color:rgba(0, 0, 0, 0);
+    padding: 0 10px;
+}
+.content .contenedor{
+    background-color: rgba(144, 172, 236, 1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+h3{
+    color: #fffafa;
+    font-size: 20px;
+}
+p{
+    background-color:rgb(144, 172, 236);
+    padding: 10px;
+    color: #fffafa;
+    text-align: start;
+    font-size: 15px;
+}
+.formulario{
+
+    text-align: center;
+    align-items: center;
+    background-color:rgb(144, 172, 236);
+    color: #fffafa;
+
+}
+.formulario .campos{
+    padding: 5px;
+    background-color:rgb(144, 172, 236);
+}
+
+input{
+    padding: 5px;
+    font-size: 12px;
+    width: 100px;
+    border: 0;
+    outline: none;
+    color: black;
+    background-color: #fff;
+    text-align: start;
+}
+
+.izquierda{
+    background-color:rgba(144, 172, 236);
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+.derecha{
+    background-color:rgb(144, 172, 236);
+    display: flex;
+    gap: 2rem;
+    justify-content:space-around;
+}
+
+.izqui{
+    width: 300px;
+}
+.relleno{
+    width: 310px;
+}
+
+.izquierda .campos{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.derecha .campos{
+    display: flex;
+    justify-content:flex-start;
+}
+.separar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.agregar{
+    padding: 6px;
+    font-size: 15px;
+    width: 200px;
+    border: 0;
+    background-color: rgba(80, 121, 201, 1);
+    color: #fffafa;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.agregar:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
+
+.opciones{
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+    color: black;
+    background-color: #fff;
+    border: none;
+}
+.filtros{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:rgb(144, 172, 236);
+    gap: 30px;
+}
+option{
+    background-color: #fff;
+    color: black;
+}
+
+.direccion{
+    width: 400px;
+    color: black;
+    
+}
+button{
+    padding: 6px;
+    font-size: 15px;
+    width: 200px;
+    border: 0;
+    background-color: rgba(80, 121, 201, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #fffafa;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+}
+label {
+    color: #fff;
+    padding: 0 5px;
+}
+.enviar{
+    border-radius: 100px;
+    padding: 3px;
+    font-size: 13px;
+    width: 140px;
+}
+.enviar:hover{
+    transform: scale(1.1);
+    transition: all 0.5;
+    cursor: pointer;
+}
+.cargarexcel{
+    width: 350px;
+    padding: 7px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.campos{
+    background-color:rgb(144, 172, 236);
+}
+.profesor{
+    margin-top: 85px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px 0;
+    background-color:rgb(144, 172, 236);
+}
+.table{
+    background-color:rgb(144, 172, 236);
+
+}
+table{
+    width: 90%;
+    margin: 5px auto;
+    text-align: center;
+    background-color:  rgba(144, 172, 236,1);
+    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+thead th{
+    padding: 10px;
+    background-color:  rgba(144, 172, 236,1);
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+}
+tbody td{
+    padding: 15px;
+    background-color:  white;
+    height: 30px;
+}
+
+.guardar{
+    padding: 0 5px;
+    font-size: 20px;
+    color: #271616;
+    background-color:none;
+}
+.editar{
+    display: inline;
+    
+}

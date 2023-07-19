@@ -1,0 +1,19 @@
+[
+    {
+      "Codigo": "001",
+      "DNI": "12345678",
+      "Nombre": "Juan",
+      "Apellido": "Pérez",
+      "Correo": "juanperez@",
+      "Direccion": "Av123"
+    },
+    {
+      "Codigo": "002",
+      "DNI": "23456789",
+      "Nombre": "María",
+      "Apellido": "García",
+      "Correo": "mariagarcia@",
+      "Direccion": "Calle 456"
+    }
+]
+

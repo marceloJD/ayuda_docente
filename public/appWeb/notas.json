@@ -1,0 +1,20 @@
+[
+    {
+      "Codigo": "001",
+      "Nombre": "Paolo",
+      "Apellido": "Lopez",
+      "Nota1": "0 ",
+      "Nota2": "0 ",
+      "Nota3": "0",
+      "Promedio": "0"
+    },
+    {
+      "Codigo": "002",
+      "Nombre": "Nick",
+      "Apellido": "ramirez",
+      "Nota1": "0",
+      "Nota2": "0",
+      "Nota3": "0",
+      "Promedio": "0"
+    }
+]

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar sesión</title>
+  <link rel="stylesheet" href="./CSS/index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.js"></script>
+  
+</head>
+<body>
+<header>
+  <h1 class="titulo">Bienvenido</h1>
+</header>
+  <div id="contenedor">
+    <form id="loginForm">
+      <h1>LOGIN</h1>
+      <div class="contenedor_icon">
+          <i class="material-icons">account_circle</i>
+          &nbsp;
+          &nbsp;
+          <label for="username"></label>
+          <input type="text" id="username" name="username" required placeholder="Ingresa tu usuario">
+      </div>
+      <div class="contenedor_icon">
+          <i class="material-icons">vpn_key</i>
+          &nbsp;
+          &nbsp; 
+          <label for="password"></label>
+          <input type="password" id="password" name="password" required placeholder="Ingrese su contraseña">  
+       </div> 
+        
+      <div class="rol">
+        <label for="role">Rol:</label>
+        <select class="opciones" id="role" name="role" required>
+          <option value="admin">Administrador</option>
+          <option value="user">Usuario</option>
+        </select>
+      </div>
+
+
+      <button type="submit">Iniciar sesión</button>
+      
+      <div class="error-message">
+        <a href="/appWeb/mensaje.html" style="color: white; text-decoration: none;">¿Olvidó su contraseña?</a>
+      </div>
+      
+    </form>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const usuario = document.getElementById('username').value;
+      const clave = document.getElementById('password').value;
+      const rol = document.getElementById('role').value;
+      fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ usuario, clave, rol })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.OK === true) {
+          // Redirigir a otra página si la respuesta es OK=true
+          
+          if(rol=='admin'){
+            window.location.href = '/administrador';
+          }else{
+            window.location.href = '/profesor';
+          }
+        } else {
+          Swal.fire({
+            title: 'Menssaje',
+            text: "Credenciales erroneas",
+            icon: 'error',
+            confirmButtonText: 'Aceptar'
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    });
+  </script>
+</body>
+</html>

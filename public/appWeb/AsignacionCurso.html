@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/asignacioncurso.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <title>Asignacion de Curso</title>
+</head>
+
+<body>
+    <header class="logo">
+        <h1>SISTEMA DE AYUDA AL DOCENTE</h1>
+        <i class="fa-solid fa-user usuario"></i>
+    </header>
+
+    <main class="container">
+        <div class="sidebar">
+            <ul class="menu-vertical">
+                <div class="profesor">
+                    <h2>Bienvenido, </h2>
+                    <h2>Supervisor</h2>
+                </div>
+                <li><a href="ListaAlumnos.html"><i class="fa-sharp fa-solid fa-graduation-cap icono"></i>Gestion de Alumnos</a></li>
+                <li><a href="ListaFechas.html"><i class="fa-solid fa-calendar-days icono"></i>Ingreso de Fecha</a></li>
+                <li><a href="AsignacionCurso.html"><i class="fa-sharp fa-solid fa-book icono"></i>Asignacion de Cursos</a></li>
+                <li><a href="/api/logout"><i class="fa-solid fa-power-off icono"></i>Salir</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <div class="contenedor por">
+                    <h3><i class="fa-sharp fa-solid fa-book icono"></i>Asignacion de Cursos</h3>
+                    <p> 1. Seleccione el curso y profesor en el que desee asignar a los alumnos</p>
+                    <div class="filtros">
+                        <div class="campos">
+                            <label htmlFor="Curso" > Curso  </label>
+                            <select class="opciones" id="comboBoxCurso">
+                                <option class="opcion" value=0> Selecciona un Curso</option>
+                                <option class="opcion"> Taller Web</option>
+                                <option class="opcion"> Arquitectura</option>
+                            </select>
+                        </div>
+                        <div class="campos">
+                            <label htmlFor="Profesor" > Profesor  </label>
+                            <select class="opciones" id="comboBoxProfe">
+                                <option value=0> Selecciona un Profesor </option>
+                                <option class="opcion"> Hugo Cordero</option>
+                                <option class="opcion"> Vallejo Flores</option>
+                            </select>
+                        </div>
+                    </div>
+            </div>
+                
+    
+            <div class="contenedor porc">
+                <p> 2. Busque el alumno al que desea matricular en el curso seleccionado previamente </p>
+                <div class="datos">
+                    <input class="izqui" placeholder="DNI del alumno" name="DNI" id="DNI" type="number"/>
+                    <button id="carga"></i>Carga Alumno</button>
+                    <button id="deshacer"></i>Deshacer</button>
+                </div>
+                <div class="table">
+                    <table id="miTabla">
+                        <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>DNI</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo</th>
+                                <th>Direccion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Codigo</td>
+                                <td>DNI</td>
+                                <td>Digite Nombre</td>
+                                <td>Digite Apellido</td>
+                                <td>Digite Correo</td>
+                                <td>Digite Direccion</td>
+        
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-secondary" id="reestablecer"><i class="fa-solid fa-arrow-rotate-left icon"></i>Reestablecer</button>
+                    <button class="btn btn-success"  id="guardar"><i class="fa-solid fa-floppy-disk icon"></i>Guardar cambios</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+</body>
+<script src="./JS/asignacionCurso.js"></script>
+</html>

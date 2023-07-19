@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/listapesos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lista de Pesos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <h1>SISTEMA DE AYUDA AL DOCENTE</h1>
+        <i class="fa-solid fa-user usuario"></i>
+    </div>
+
+    <header >
+        <div>
+            <ul class="menu-vertical">
+                <div class="profesor">
+                    <h2>Bienvenido, </h2>
+                    <h2>Profesor</h2>
+                </div>
+                <li><a href="ListaNotas.html"><i class="fa-solid fa-pen-to-square icono"></i>Ingreso de notas</a></li>
+                <li><a href="listapesos.html"><i class="fa-solid fa-gear icono"></i>Configuracion de variables</a></li>
+
+                <li><a href="#"><i class="fa-solid fa-power-off icono"></i>Salir</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <section class="dash">
+
+        <div class="contenido">
+            <div class="carousel">
+
+                <div class="conteiner item">
+                    <div class="Pasop">
+                        <div>
+                            <h1 class="titulo"><i class="fa-solid fa-gear icono"></i>CONFIGURACION DE LAS VARIABLES</h1>
+                        </div>
+                        <p> En esta seccion podrá designar los pesos correspondientes a las variables de las notas del curso</p>
+                    </div>
+    
+                    <div class="filtros">
+                        <div class="numeros">
+                            <span>1</span><span>2</span>
+                        </div>
+                        <div class="campos">
+                            <h3 class="paso1">Paso 1.</h3>
+                            <label for="Buscar" class="seleccion" > Seleccione un curso de la lista :  </label>
+                            <select class="opciones" id="comboBox">
+                                <option value="seleciona un curso"> Selecciona un Curso</option>
+                            </select>
+                        </div>
+                       <!-- <button>Siguiente</button>-->
+                    </div>
+                </div>
+                
+                <div class="conteiner item">
+                    <div class="Pasop">
+                        <div>
+                            <h1 class="titulo"><i class="fa-solid fa-gear icono"></i>CONFIGURACION DE LAS VARIABLES</h1>
+                        </div>
+                        <p> En esta seccion podrá designar los pesos correspondientes a las variables de las notas del curso</p>
+                    </div>
+    
+                    <div class="agregarpeso"> 
+                        <div class="numeros">
+                            <span class="ero">1</span><span>2</span>
+                        </div>
+                        <div class="adicionar">
+                            <p class="text"> Agregue las variables de las notas de sus cursos por medio del boton "+" y complete los campos.</p>
+                        </div>
+                        <div class="table">
+                        
+                        </div>
+                            
+                        <div class="botones">
+                                <!--<button class="volver">Volver</button> -->
+                                <button id="guardar" onclick="guardarDatos()" ><i class="fa-sharp fa-solid fa-floppy-disk icono"></i>Guardar cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="prev-button">Anterior</button>
+            <button class="next-button">Siguiente</button>
+        </div>
+    </section>
+    
+    <script src="./JS/listapesos.js"></script>
+</body>
+</html>
